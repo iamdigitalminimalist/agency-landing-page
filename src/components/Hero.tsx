@@ -21,15 +21,13 @@ const ArrowDown = () => {
 
 export const Hero = () => {
   return (
-    <section className="h-96">
-      <Container>
-        <>
-          <h1 className="font-serif font-black tracking-[0.5rem] text-custom-white text-4xl text-center mt-16 max-w-xs mx-auto sm:max-w-xl">
-            WE ARE CREATIVES
-          </h1>
-          <ArrowDown />
-        </>
-      </Container>
-    </section>
+    <Container className="h-96">
+      <>
+        <h1 className="font-serif font-bold tracking-[0.5rem] text-custom-white text-4xl text-center max-w-xs mx-auto sm:max-w-xl mt-16">
+          WE ARE CREATIVES
+        </h1>
+        <ArrowDown />
+      </>
+    </Container>
   );
 };
