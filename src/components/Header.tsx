@@ -22,8 +22,8 @@ export const NavLink = (props: NavLinkProps) => {
 
 export const Header = () => {
   return (
-    <div className="bg-hero bg-cover bg-center bg-no-repeat w-full xl:bg-fill mx-auto">
-      <header className="py-10 w-full text-custom-white font-sans">
+    <header className="w-full text-custom-white font-sans bg-[#3ebfff]">
+      <div className="bg-hero bg-contain bg-bottom bg-no-repeat w-full xl:bg-fill mx-auto py-10 ">
         <Container>
           <>
             <nav className="relative flex-row">
@@ -51,7 +51,7 @@ export const Header = () => {
             <Hero />
           </>
         </Container>
-      </header>
-    </div>
+      </div>
+    </header>
   );
 };

@@ -22,6 +22,10 @@ module.exports = {
     extend: {
       backgroundImage: {
         hero: "url('/images/image-header.jpg')",
+        benefitTransform: "url('/images/image-transform.jpg')",
+        benefitStand: "url('/images/image-stand-out.jpg')",
+        featureDesign: "url('/images/image-graphic-design.jpg')",
+        featurePhotography: "url('/images/image-photography.jpg')",
       },
       fontFamily: {
         sans: ["var(--font-barlow)", ...fontFamily.sans],

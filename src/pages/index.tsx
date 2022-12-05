@@ -1,21 +1,18 @@
 import { Header } from "../components/Header";
 import { BenefitsSection } from "../components/BenefitsSection";
-import { benefits } from "../data/benefits";
+import { benefits, features, testimonials } from "../data";
+import { FeaturesSection } from "../components/FeaturesSection";
+import { TestimonialsSection } from "../components/TestimonialsSection";
 
 export default function Home() {
   return (
     <div>
       <Header />
-      {benefits.map((benefit) => (
-        <BenefitsSection
-          key={benefit.id}
-          id={benefit.id}
-          imgSrc={benefit.imgSrc}
-          imgAlt={benefit.imgAlt}
-          title={benefit.title}
-          content={benefit.content}
-        />
-      ))}
+      <main>
+        <BenefitsSection benefits={benefits} />
+        <FeaturesSection features={features} />
+        <TestimonialsSection testimonials={testimonials} />
+      </main>
     </div>
   );
 }

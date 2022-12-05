@@ -16,10 +16,10 @@ const fraunces = Fraunces({
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
-    <main
+    <div
       className={`${barlow.variable} ${fraunces.variable} font-serif font-sans`}
     >
       <Component {...pageProps} />
-    </main>
+    </div>
   );
 }
